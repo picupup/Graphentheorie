@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>floyd-warshall</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="floyd-warshall.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.3.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/photo_2022-01-31_18-31-04.jpg"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="floyd-warshall">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-d21c"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="" class="u-border-1 u-border-grey-75 u-image u-logo u-image-1" data-image-width="1280" data-image-height="651">
+          <img src="images/photo_2022-01-31_18-31-04.jpg" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Graphen.html" style="padding: 10px 20px;">Graphen</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Graphen.html">Graphen</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="floyd-warshall.html">floyd-warshall</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Mathe.html" style="padding: 10px 20px;">Mathe</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Sonstiges.html" style="padding: 10px 20px;">Sonstiges</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Graphen.html" style="padding: 10px 20px;">Graphen</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Graphen.html">Graphen</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="floyd-warshall.html">floyd-warshall</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Mathe.html" style="padding: 10px 20px;">Mathe</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Sonstiges.html" style="padding: 10px 20px;">Sonstiges</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-1514">
+
+      <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+        <h1>Floyd-Warshall Algorithmus</h1>
+
+        
+        <label for="my_input">Bitte die Matrizen Dimension von (n) mal (n) angeben </label>
+        <input type="number" id="my_input" name="my_input" min="2" max="20":w value="5">
+        <button data-toggle="modal" data-target="#myModal" onclick="createfield()" id="numbersubmit" name="" type="button">GO</button>
+      
+      </div>
+
+      <div class="u-align-left u-clearfix u-sheet u-sheet-1" id="matrix">
+
+
+      </div>
+
+
+      <div class="u-align-left u-clearfix u-sheet u-sheet-1" id="matrixresponse">
+
+
+      </div>
+
+
+      
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2c8b"><div class="u-align-left u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h3 class="u-text u-text-default u-text-1">kontakts:</h3>
+                  <p class="u-text u-text-2"><span class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 511 511" style="width: 1em; height: 1em;"><path d="m114.59375 491.140625c-5.609375 0-11.179688-1.75-15.933594-5.1875-8.855468-6.417969-12.992187-17.449219-10.582031-28.09375l32.9375-145.089844-111.703125-97.960937c-8.210938-7.167969-11.347656-18.519532-7.976562-28.90625 3.371093-10.367188 12.542968-17.707032 23.402343-18.710938l147.796875-13.417968 58.433594-136.746094c4.308594-10.046875 14.121094-16.535156 25.023438-16.535156 10.902343 0 20.714843 6.488281 25.023437 16.511718l58.433594 136.769532 147.773437 13.417968c10.882813.980469 20.054688 8.34375 23.425782 18.710938 3.371093 10.367187.253906 21.738281-7.957032 28.90625l-111.703125 97.941406 32.9375 145.085938c2.414063 10.667968-1.726562 21.699218-10.578125 28.097656-8.832031 6.398437-20.609375 6.890625-29.910156 1.300781l-127.445312-76.160156-127.445313 76.203125c-4.308594 2.558594-9.109375 3.863281-13.953125 3.863281zm141.398438-112.875c4.84375 0 9.640624 1.300781 13.953124 3.859375l120.277344 71.9375-31.085937-136.941406c-2.21875-9.746094 1.089843-19.921875 8.621093-26.515625l105.472657-92.5-139.542969-12.671875c-10.046875-.917969-18.6875-7.234375-22.613281-16.492188l-55.082031-129.046875-55.148438 129.066407c-3.882812 9.195312-12.523438 15.511718-22.546875 16.429687l-139.5625 12.671875 105.46875 92.5c7.554687 6.613281 10.859375 16.769531 8.621094 26.539062l-31.0625 136.9375 120.277343-71.914062c4.308594-2.558594 9.109376-3.859375 13.953126-3.859375zm-84.585938-221.847656s0 .023437-.023438.042969zm169.128906-.0625.023438.042969c0-.023438 0-.023438-.023438-.042969zm0 0"></path></svg><img></span>E-Mail:&nbsp;<a rel="nofollow" target="_blank" href="mailto:erfkarimi@smail.hs-bremerhaven.de" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">erfkarimi@smail.hs-bremerhaven.de</a>
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <a href="" class="u-btn u-btn-round u-button-style u-gradient u-none u-radius-4 u-text-body-alt-color u-btn-2"><span class="u-icon u-text-white"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M53.333,224C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64 c12.011,0,23.061-4.053,32-10.795V224H53.333z"></path><path d="M512,304c0-12.821-5.077-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725    c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333 c-22.165,0-37.995,12.48-38.677,12.992c-2.517,2.027-3.989,5.099-3.989,8.341v72.341l-61.44,133.099l-2.56,1.301v228.651    C188.032,475.584,210.005,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.269c2.453-11.115,1.024-22.315-3.861-32.043 c15.765-7.936,26.368-24.171,26.368-42.688c0-7.552-1.728-14.784-5.013-21.333C501.419,338.731,512,322.496,512,304z"></path></svg><img></span>&nbsp;Like
+                  </a>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                <div class="u-container-layout u-valign-top u-container-layout-3">
+                  <h3 class="u-text u-text-default u-text-3">SiteMap:</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="" target="_blank">
+        <span></span>
+      </a>
+      <p class="u-text">
+        <span></span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span></span>
+      </a>. 
+    </section>
+  </body>
+</html>
